@@ -30,18 +30,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-kc-6lE">
-                                <rect key="frame" x="48" y="203" width="503" height="362"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <searchBar contentMode="redraw" misplaced="YES" placeholder="Search GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-nL-5DG">
                                 <rect key="frame" x="0.0" y="79" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NC9-2I-djv"/>
-                                </connections>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repository Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-Kx-6jB">
                                 <rect key="frame" x="97.5" y="34" width="163.5" height="24"/>
@@ -63,8 +54,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="SearchInType" destination="2LV-nL-5DG" id="jcJ-0F-lYg"/>
-                        <outlet property="mySearchBar" destination="2LV-nL-5DG" id="jyk-z5-Pyl"/>
+                        <outlet property="MySearchBar" destination="2LV-nL-5DG" id="4fc-ac-3UH"/>
                         <outlet property="searchDisplayController" destination="EyZ-QC-9fv" id="0my-fs-gnd"/>
                     </connections>
                 </viewController>

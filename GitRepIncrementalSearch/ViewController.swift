@@ -48,7 +48,7 @@ class ViewController: UIViewController {
   
   
 
-  @IBOutlet weak var SearchInType: UISearchBar!
+  @IBOutlet weak var MySearchBar: UISearchBar!
   //getJson()
 
 }
