@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incremental Repository Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-Kx-6jB">
-                                <rect key="frame" x="124" y="28" width="283" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GitHub " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-33-Fba">
-                                <rect key="frame" x="48" y="34" width="73" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GitHub " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-33-Fba">
+                                <rect key="frame" x="20" y="34" width="73" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,18 +36,35 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" text="Search GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-nL-5DG">
+                            <searchBar contentMode="redraw" misplaced="YES" placeholder="Search GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-nL-5DG">
                                 <rect key="frame" x="0.0" y="79" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="NC9-2I-djv"/>
                                 </connections>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repository Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-Kx-6jB">
+                                <rect key="frame" x="97.5" y="34" width="163.5" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="5o4-Ao-LCB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ahu-33-Fba" secondAttribute="leading" id="COG-bp-Vk9"/>
+                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="3" id="KyA-0a-b0L"/>
+                            <constraint firstItem="2LV-nL-5DG" firstAttribute="top" secondItem="ahu-33-Fba" secondAttribute="bottom" constant="21" id="PMg-5T-NSu"/>
+                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="3" id="iqR-f5-EK3"/>
+                            <constraint firstItem="ahu-33-Fba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="k5P-86-QYA"/>
+                            <constraint firstItem="2LV-nL-5DG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rAb-0Q-yaI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2LV-nL-5DG" secondAttribute="trailing" constant="-20" id="tvg-EQ-4Yf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="SearchInType" destination="2LV-nL-5DG" id="jcJ-0F-lYg"/>
+                        <outlet property="mySearchBar" destination="2LV-nL-5DG" id="jyk-z5-Pyl"/>
                         <outlet property="searchDisplayController" destination="EyZ-QC-9fv" id="0my-fs-gnd"/>
                     </connections>
                 </viewController>
@@ -67,7 +79,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="236" y="442"/>
+            <point key="canvasLocation" x="-315" y="247"/>
         </scene>
     </scenes>
 </document>
