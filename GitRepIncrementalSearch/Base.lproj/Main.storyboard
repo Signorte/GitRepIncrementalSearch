@@ -35,26 +35,35 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repository Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-Kx-6jB">
-                                <rect key="frame" x="97.5" y="34" width="163.5" height="24"/>
+                                <rect key="frame" x="97" y="34" width="163.5" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-sy-iLq">
+                                <rect key="frame" x="27" y="127.5" width="544" height="472.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5aj-sy-iLq" secondAttribute="bottom" constant="200" id="1ec-v3-tJ6"/>
                             <constraint firstItem="FGr-Kx-6jB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="5o4-Ao-LCB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ahu-33-Fba" secondAttribute="leading" id="COG-bp-Vk9"/>
                             <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="3" id="KyA-0a-b0L"/>
                             <constraint firstItem="2LV-nL-5DG" firstAttribute="top" secondItem="ahu-33-Fba" secondAttribute="bottom" constant="21" id="PMg-5T-NSu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5aj-sy-iLq" secondAttribute="trailing" constant="160" id="T7o-KI-tAh"/>
+                            <constraint firstItem="5aj-sy-iLq" firstAttribute="top" secondItem="2LV-nL-5DG" secondAttribute="bottom" constant="1" id="dZW-v1-ejD"/>
                             <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="3" id="iqR-f5-EK3"/>
                             <constraint firstItem="ahu-33-Fba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="k5P-86-QYA"/>
                             <constraint firstItem="2LV-nL-5DG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rAb-0Q-yaI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2LV-nL-5DG" secondAttribute="trailing" constant="-20" id="tvg-EQ-4Yf"/>
+                            <constraint firstItem="5aj-sy-iLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="vJr-Sf-las"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="MySearchBar" destination="2LV-nL-5DG" id="4fc-ac-3UH"/>
+                        <outlet property="MySearchBar" destination="2LV-nL-5DG" id="srQ-7W-PyX"/>
+                        <outlet property="ResTableView" destination="5aj-sy-iLq" id="gXI-JK-nf2"/>
                         <outlet property="searchDisplayController" destination="EyZ-QC-9fv" id="0my-fs-gnd"/>
                     </connections>
                 </viewController>
