@@ -18,47 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GitHub " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-33-Fba">
-                                <rect key="frame" x="20" y="34" width="73" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-33-Fba">
+                                <rect key="frame" x="20" y="34" width="74.5" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AV-bz-Y5C">
-                                <rect key="frame" x="105" y="151" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <searchBar contentMode="redraw" misplaced="YES" placeholder="Search GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-nL-5DG">
+                            <searchBar contentMode="redraw" placeholder="Search GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-nL-5DG">
                                 <rect key="frame" x="0.0" y="79" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repository Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-Kx-6jB">
-                                <rect key="frame" x="97" y="34" width="163.5" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-Kx-6jB">
+                                <rect key="frame" x="98.5" y="34" width="158" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-sy-iLq">
-                                <rect key="frame" x="27" y="127.5" width="544" height="472.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-sy-iLq">
+                                <rect key="frame" x="27" y="128" width="544" height="473"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="473" id="zqg-z0-s2y"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5aj-sy-iLq" secondAttribute="bottom" constant="200" id="1ec-v3-tJ6"/>
-                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="5o4-Ao-LCB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ahu-33-Fba" secondAttribute="leading" id="COG-bp-Vk9"/>
-                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="3" id="KyA-0a-b0L"/>
-                            <constraint firstItem="2LV-nL-5DG" firstAttribute="top" secondItem="ahu-33-Fba" secondAttribute="bottom" constant="21" id="PMg-5T-NSu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5aj-sy-iLq" secondAttribute="trailing" constant="160" id="T7o-KI-tAh"/>
-                            <constraint firstItem="5aj-sy-iLq" firstAttribute="top" secondItem="2LV-nL-5DG" secondAttribute="bottom" constant="1" id="dZW-v1-ejD"/>
-                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="3" id="iqR-f5-EK3"/>
-                            <constraint firstItem="ahu-33-Fba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="k5P-86-QYA"/>
-                            <constraint firstItem="2LV-nL-5DG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rAb-0Q-yaI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2LV-nL-5DG" secondAttribute="trailing" constant="-20" id="tvg-EQ-4Yf"/>
-                            <constraint firstItem="5aj-sy-iLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="vJr-Sf-las"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ahu-33-Fba" secondAttribute="leading" id="3hg-i6-G9p"/>
+                            <constraint firstItem="2LV-nL-5DG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="HHq-Lx-nnH"/>
+                            <constraint firstItem="2LV-nL-5DG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="79" id="MiJ-42-r7u"/>
+                            <constraint firstItem="2LV-nL-5DG" firstAttribute="top" secondItem="FGr-Kx-6jB" secondAttribute="bottom" constant="21" id="Vzl-ET-Igi"/>
+                            <constraint firstItem="ahu-33-Fba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="Ymh-F7-aSK"/>
+                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="dCS-Rs-7ER"/>
+                            <constraint firstItem="5aj-sy-iLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="nue-vy-40f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5aj-sy-iLq" secondAttribute="trailing" constant="9" id="pby-em-ImD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2LV-nL-5DG" secondAttribute="trailing" constant="-20" id="sD5-aE-ArQ"/>
+                            <constraint firstItem="5aj-sy-iLq" firstAttribute="top" secondItem="2LV-nL-5DG" secondAttribute="bottom" constant="5" id="u0n-Ra-2hp"/>
+                            <constraint firstItem="FGr-Kx-6jB" firstAttribute="leading" secondItem="ahu-33-Fba" secondAttribute="trailing" constant="4" id="wiL-Gt-1Lg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,7 +74,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-315" y="247"/>
+            <point key="canvasLocation" x="-436" y="230"/>
         </scene>
     </scenes>
 </document>

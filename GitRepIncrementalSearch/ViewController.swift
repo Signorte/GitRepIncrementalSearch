@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    //ラベル（出力管理用）
+/*    //ラベル（出力管理用）
     myLabel = UILabel(frame: CGRectMake(10,180,300,30))
     myLabel.layer.borderWidth = 1.0
     myLabel.layer.borderColor = UIColor.grayColor().CGColor
     self.view.addSubview(myLabel)
-  }
+*/  }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -56,8 +56,9 @@ class ViewController: UIViewController {
   }
   
   
+  // MARK: UISearchBarDelegate
   //サーチバー更新時(UISearchBarDelegateを関連づけておく必要があります）
-  func MySearchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+/*  func MySearchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
     // 確定前の文字入力を検知します
     // return trueして文字入力が確定した後にsearchBarの文字を取得する処理を遅延実行します
     let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(100 * Double(NSEC_PER_MSEC)))
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
     }
     return true
   }
-  
+*/  
   func searchBySearchBarText() {
     // 検索バーから検索ワードを取り出す
     let searchText = searchDisplayController!.searchBar.text!
